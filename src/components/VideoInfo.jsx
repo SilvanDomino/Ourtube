@@ -5,7 +5,7 @@ export function VideoInfo() {
     <div className={styles.videoInfo}>
       <div className={styles.video_title}>
         <h1 className={styles.video_titleText}>
-        Monkey jumping on car
+        Nothing But Thieves - Amsterdam (Official Video)
         </h1>
       </div>
       <div className={styles.video_data}>
