@@ -3,12 +3,12 @@ import styles from './videoInfo.module.css';
 export function VideoInfo() {
   return (
     <div className={styles.videoInfo}>
-      <div className="vide_title">
-        <p>
+      <div className={styles.video_title}>
+        <h1 className={styles.video_titleText}>
         Monkey jumping on car
-        </p>
+        </h1>
       </div>
-      <div className="video_data">
+      <div className={styles.video_data}>
         <div>
           <div className={styles.channelInfo}>
             <img src="../src/assets/img/unnamed.jpg" className={styles.profile}/>
@@ -20,7 +20,7 @@ export function VideoInfo() {
           </div>
         </div>
       </div>
-      <div className="video_desc">
+      <div className={styles.video_desc}>
         description
       </div>
     </div>
