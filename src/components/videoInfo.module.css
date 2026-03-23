@@ -1,47 +1,117 @@
-.videoInfo {
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
+.accordian {
+  border: 1px solid grey;
+  border-radius: 8px; /* Optioneel: maakt het wat minder hoekig */
+  margin-top: 10px;
 }
 
-.video_titleText{
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+.video_titleText {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
 }
- 
+
 .profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
- 
-.channel-name {
-    font-size: 20px;
-    font-weight: bold;
-}
- 
-.subscriber-count {
-    font-size: 14px;
-    color: #555;
-}
- 
+
 .channelInfo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
- 
+
 .channelText {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
- 
+
+/* Gefixed: de 'channel-name' heeft een streepje, dus we gebruiken de juiste class */
+.channel-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subscriber-count {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
 .subscribe-button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25%;
-    cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* 25% was een beetje vreemd voor een knop, 20px is ronder */
+  cursor: pointer;
+  font-weight: bold;
+} /* <-- Hier ontbrak de sluitende accolade! */
+
+/* Accordion styling */
+
+.triggerInput {
+  display: none;
+}
+
+.triggerLabel {
+  font-size: 20px; /* 30px was erg groot, maar pas aan naar smaak */
+  display: block;
+  cursor: pointer;
+  padding: 15px 10px 15px 40px;
+  position: relative;
+  user-select: none;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.triggerLabel:before {
+  content: " ";
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  transition: transform 0.3s;
+}
+
+/* De content van de accordion */
+.content {
+  font-size: 16px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* Logica voor het openen */
+.triggerInput:checked ~ .triggerLabel:before {
+  transform: rotate(90deg);
+}
+
+.triggerInput:checked ~ .content {
+  padding: 20px;
+  opacity: 1;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #606060;
+}
+
+.text {
+  margin: 0;
+  line-height: 1.5;
 }
