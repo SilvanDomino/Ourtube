@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <script src="js/all.min.js"></script>
       <main>
         <Sidenav />
         <div className="content">

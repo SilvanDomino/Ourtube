@@ -3,3 +3,16 @@
     background-color: var(--color-secondary);
     border: 1px solid red;
 }
+
+.FlexButton {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.HistoryText {
+    
+}
+
+.HistoryIcon {
+    height: 20px;
+}
