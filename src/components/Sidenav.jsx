@@ -11,4 +11,4 @@ export function Sidenav() {
       </div>
     </nav>
   );
-};
+}
