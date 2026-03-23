@@ -1,40 +1,13 @@
 import styles from './sidenav.module.css';
-import { House } from 'lucide-react';
-import { Layers2 } from 'lucide-react';
-import { UserCheck } from 'lucide-react';
-import { History } from 'lucide-react';
-import { ThumbsUp } from 'lucide-react';
-import { TrendingUp } from 'lucide-react'; 
+import History from '../assets/icons/clock-rotate-left-solid-full.svg';
 
 export function Sidenav() {
   return (
     <nav className={styles.sidenav}>
-      <div className={`${styles.sidenav__item} ${styles['sidenav__item--active']}`}>
-        <span className={styles.sidenav__icon}><House /></span> 
-        Home
-      </div>
-      <div className={styles.sidenav__item}>
-        <span className={styles.sidenav__icon}><Layers2 /></span>
-        Shorts
-      </div>
-      <div className={styles.sidenav__item}>
-        <span className={styles.sidenav__icon}><UserCheck /></span>
-        Subscriptions
-      </div>
-
-      <div className={styles.sidenav__divider} />
-
-      <div className={styles.sidenav__item}>
-        <span className={styles.sidenav__icon}><History /></span>
-        History
-      </div>
-      <div className={styles.sidenav__item}>
-        <span className={styles.sidenav__icon}><ThumbsUp /></span>
-        Liked videos
-      </div>
-      <div className={styles.sidenav__item}>
-        <span className={styles.sidenav__icon}><TrendingUp /></span>
-        Trending
+      Sidenav Component
+      <div className={styles.FlexButton}>
+        <p className={styles.HistoryText}>history </p>
+        <img className={styles.HistoryIcon} src={History} alt='History'/>
       </div>
     </nav>
   );
