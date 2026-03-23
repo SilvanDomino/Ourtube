@@ -3,3 +3,40 @@
     flex-direction: column;
     background-color: grey;
 }
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.channel-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subscriber-count {
+    font-size: 14px;
+    color: #555;
+}
+
+.channelInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channelText {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+}
