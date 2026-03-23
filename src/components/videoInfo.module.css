@@ -1,2 +1,5 @@
 .videoInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
 }
