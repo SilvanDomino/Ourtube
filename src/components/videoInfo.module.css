@@ -1,6 +1,6 @@
 .accordian {
   border: 1px solid grey;
-  border-radius: 8px; /* Optioneel: maakt het wat minder hoekig */
+  border-radius: 8px;
   margin-top: 10px;
 }
 
@@ -27,7 +27,6 @@
   flex-direction: column;
 }
 
-/* Gefixed: de 'channel-name' heeft een streepje, dus we gebruiken de juiste class */
 .channel-name {
   font-size: 20px;
   font-weight: bold;
@@ -45,19 +44,17 @@
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 20px; /* 25% was een beetje vreemd voor een knop, 20px is ronder */
+  border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
-} /* <-- Hier ontbrak de sluitende accolade! */
-
-/* Accordion styling */
+}
 
 .triggerInput {
   display: none;
 }
 
 .triggerLabel {
-  font-size: 20px; /* 30px was erg groot, maar pas aan naar smaak */
+  font-size: 20px;
   display: block;
   cursor: pointer;
   padding: 15px 10px 15px 40px;
@@ -80,7 +77,6 @@
   transition: transform 0.3s;
 }
 
-/* De content van de accordion */
 .content {
   font-size: 16px;
   height: 0;
@@ -89,7 +85,6 @@
   transition: all 0.3s ease-out;
 }
 
-/* Logica voor het openen */
 .triggerInput:checked ~ .triggerLabel:before {
   transform: rotate(90deg);
 }
