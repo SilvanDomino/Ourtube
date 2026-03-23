@@ -13,11 +13,18 @@ export function VideoInfo() {
         <div className={styles.channelInfo}>
           <img src="../src/assets/img/unnamed.jpg" className={styles.profile} alt="Channel Profile" />
           <div className={styles.channelText}>
-            <h1 className={styles['channel-name']}>Monkey</h1>
+            <div className={styles.channelTitleRow}>
+              <h1 className={styles['channel-name']}>Monkey</h1>
+              <div className={styles['subscribe-button']}>Subscribe</div>
+            </div>
             <h3 className={styles['subscriber-count']}>6,43 mln. subscribers</h3>
           </div>
-          <div className={styles['subscribe-button']}>Subscribe</div>
         </div>
+        <button className={styles.likeButton}>Like</button>
+        <button className={styles.dislikeButton}>Dislike</button>
+        <button className={styles.shareButton}>Share</button>
+        <button className={styles.saveButton}>Save</button>
+        <button className={styles.reportButton}>Report</button>
       </div>
       <div className={styles.video_desc}>
         <div className={styles.accordian}>

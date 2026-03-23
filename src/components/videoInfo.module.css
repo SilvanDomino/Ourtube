@@ -16,15 +16,34 @@
   object-fit: cover;
 }
 
+.video_data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .channelInfo {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1;
 }
 
 .channelText {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+}
+
+.channelTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe-button {
+  margin-left: 0;
 }
 
 .channel-name {
@@ -109,4 +128,66 @@
 .text {
   margin: 0;
   line-height: 1.5;
+}
+
+.likeButton,
+.dislikeButton,
+.shareButton,
+.saveButton,
+.reportButton,
+.subscribe-button {
+  background-color: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  min-width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likeButton.active,
+.dislikeButton.active {
+  color: #ffd700;
+  background-color: rgba(255,215,0,0.16);
+  border-color: rgba(255,215,0,0.3);
+}
+
+.likeButton:hover,
+.dislikeButton:hover,
+.shareButton:hover,
+.saveButton:hover,
+.reportButton:hover,
+.subscribe-button:hover {
+  background-color: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.4);
+  transform: scale(1.03);
+}
+
+.likeButton:focus,
+.dislikeButton:focus,
+.shareButton:focus,
+.saveButton:focus,
+.reportButton:focus,
+.subscribe-button:focus {
+  outline: 2px solid rgba(255,255,255,0.6);
+  outline-offset: 2px;
+}
+
+.subscribe-button {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #fff;
+}
+
+.subscribe-button:hover {
+  background-color: #e60000;
+  border-color: #e60000;
 }
