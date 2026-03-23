@@ -1,0 +1,51 @@
+export const comments = [
+  {
+    id: 1,
+    username: '@Patriciajones1980',
+    timestamp: '2 days ago',
+    text: 'Aint no way big yahu 🔥',
+    likes: 24,
+  },
+  {
+    id: 2,
+    username: '@skibidimaster99',
+    timestamp: '5 hours ago',
+    text: 'bro is so sigma for this fr fr no cap on god 🙏',
+    likes: 812,
+  },
+  {
+    id: 3,
+    username: '@goonmaxxing4life',
+    timestamp: '1 day ago',
+    text: 'this is giving me gyatt rizz aura and i am NOT okay 💀',
+    likes: 3400,
+  },
+  {
+    id: 4,
+    username: '@fanum_tax_collector',
+    timestamp: '3 days ago',
+    text: 'lowkey mid but also lowkey bussin at the same time??? make it make sense',
+    likes: 57,
+  },
+  {
+    id: 5,
+    username: '@ohio_escapee',
+    timestamp: '6 hours ago',
+    text: 'only in ohio would this be considered normal 💀💀💀',
+    likes: 9200,
+  },
+  {
+    id: 6,
+    username: '@looksmaxxer_official',
+    timestamp: '2 hours ago',
+    text: 'W rizz W aura W everything bro is built different ngl',
+    likes: 441,
+  },
+  {
+    id: 7,
+    username: '@grimace_shake',
+    timestamp: '4 days ago',
+    text: 'POV: you just got fanum taxed and lost your whole plate 😭😭',
+    likes: 1100,
+  },
+];
