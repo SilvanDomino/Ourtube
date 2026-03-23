@@ -23,7 +23,6 @@ export function VideoInfo() {
         <div className={styles.accordian}>
           <input type="checkbox" id="trigger" className={styles.triggerInput} />
           <label htmlFor="trigger" className={styles.triggerLabel}>
-            Monkey jumping on car
             <ul className={styles.info}>
               <li>1.2M Views</li>
               <li>23 maart 2026</li>
