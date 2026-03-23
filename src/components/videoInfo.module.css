@@ -1,2 +1,193 @@
-.videoInfo {
+.accordian {
+  border: 4px solid rgba(128, 128, 128, 0.377);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.video_titleText {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video_data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.channelInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.channelText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.channelTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe-button {
+  margin-left: 0;
+}
+
+.channel-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subscriber-count {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.triggerInput {
+  display: none;
+}
+
+.triggerLabel {
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  padding: 15px 10px 15px 40px;
+  position: relative;
+  user-select: none;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.triggerLabel:before {
+  content: " ";
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgb(146, 146, 146);
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  transition: transform 0.3s;
+}
+
+.content {
+  font-size: 16px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.triggerInput:checked ~ .triggerLabel:before {
+  transform: rotate(90deg);
+}
+
+.triggerInput:checked ~ .content {
+  padding: 20px;
+  opacity: 1;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.likeButton,
+.dislikeButton,
+.shareButton,
+.saveButton,
+.reportButton,
+.subscribe-button {
+  background-color: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  min-width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likeButton.active,
+.dislikeButton.active {
+  color: #ffd700;
+  background-color: rgba(255,215,0,0.16);
+  border-color: rgba(255,215,0,0.3);
+}
+
+.likeButton:hover,
+.dislikeButton:hover,
+.shareButton:hover,
+.saveButton:hover,
+.reportButton:hover,
+.subscribe-button:hover {
+  background-color: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.4);
+  transform: scale(1.03);
+}
+
+.likeButton:focus,
+.dislikeButton:focus,
+.shareButton:focus,
+.saveButton:focus,
+.reportButton:focus,
+.subscribe-button:focus {
+  outline: 2px solid rgba(255,255,255,0.6);
+  outline-offset: 2px;
+}
+
+.subscribe-button {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #fff;
+}
+
+.subscribe-button:hover {
+  background-color: #e60000;
+  border-color: #e60000;
 }
